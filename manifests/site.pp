@@ -1,6 +1,6 @@
 node 'master.puppet.vm' {
   include role::master_server
-   file {'/README':
+   file {'./README':
     ensure => file, 
     content => 'hi', 
    }
