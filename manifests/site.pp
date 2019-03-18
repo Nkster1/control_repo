@@ -5,6 +5,9 @@ node 'master.puppet.vm' {
     content => 'hi how are you', 
    }
 }
+node puppet-local {
+  include role::master
+}
 node /^web/ {
   include role::app_server
 }
